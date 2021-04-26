@@ -21,3 +21,6 @@ TEMPLATE ENGINE:
 Nessa aula foi ensinado a utilizar o template engine "ejs", em que é possível adicionar JS no HTML.
 Para utilizar esse template é necessário mudar as extenões do HTML para EJS.
 Para usar esse template no nodejs deve-se utilizar a função .render();
+
+## Aula 02
+
