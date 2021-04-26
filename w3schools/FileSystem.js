@@ -42,3 +42,26 @@ http.createServer((req, res) => {
 
 // Portanto, para servir arquivos para o servidor, basta usar esse método.
 
+
+/**
+ *  Criar arquivos
+ *  
+ *  O método FileSystem possui alguns métodos para criar novos arquivos
+ * 
+ *  fs.appendFile()
+ *  fs.open()
+ *  fs.writeFile()
+ * 
+ */
+
+const conteudo = "\nIsso significa que o node primeiro transforma a string em bits e depois adiciona no arquivo\n"
+
+/**
+ *  appendFile() -> Recebe um arquivo, depois um conteúdo a ser adicionado nesse arquivo em string.
+ *  e por último um callbak de erro, geralmente utilizado para informa se deu tudo certo na gravação ou não.
+ * 
+ */
+fs.appendFile("file.txt", conteudo, (err) => {
+    if (err) throw err;
+    console.log("saved!")
+})
