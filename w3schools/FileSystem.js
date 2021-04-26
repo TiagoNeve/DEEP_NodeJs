@@ -65,3 +65,33 @@ fs.appendFile("file.txt", conteudo, (err) => {
     if (err) throw err;
     console.log("saved!")
 })
+
+/**
+ *  fs.writeFile() -> Substitui o arquivo e coloca o conteúdo no mesmo, caso tenha é claro, se não tiver
+ *  cria um novo e coloca o conteúdo dentro.
+ *
+ */
+fs.writeFile("file1.txt", "Conteudo", (err) => {
+    if (err) throw err;
+    console.log("Arquivado.")
+})
+
+// DELETAR ARQUIVOS
+
+/**
+ * fs.unlink() -> Exclui um arquivo específico.
+ */
+fs.unlink("file.txt", (err) => {
+    if (err) throw err;
+    console.log("Deletado")
+})
+
+// RENOMEAR ARQUIVOS
+
+/**
+ * fs.rename() -> Renomeia um arquivo para outro arquivo.
+ */
+fs.rename("file.txt", "fileRenomeado.txt", (err) => {
+    if (err) throw err;
+    console.log("Arquivo renomeado")
+})
