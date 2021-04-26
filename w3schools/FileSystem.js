@@ -39,3 +39,6 @@ http.createServer((req, res) => {
         return res.end();
     })
 }).listen(3333) // Porta que o servidor está escutando as requisições 
+
+// Portanto, para servir arquivos para o servidor, basta usar esse método.
+
