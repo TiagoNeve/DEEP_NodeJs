@@ -1,0 +1,5 @@
+Eu sou o conteúdo dessa nooite.Eu sou o conteúdo daquela nooite.Irei pular nessa nooite?
+
+Isso é muito insando, eu consegui pular a linha
+
+Isso significa que o node primeiro transforma a string em bits e depois adiciona no arquivo
